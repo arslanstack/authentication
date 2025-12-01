@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "691329f8-8e3e-4f02-b264-148a8c80030d",
+		"name": "Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44107237",
+		"_collection_link": "https://muhammadarslan-2536431.postman.co/workspace/Muhammad-Arslan's-Workspace~602ab9f0-5e4a-46a4-8a77-8bedb0c0b29e/collection/44107237-691329f8-8e3e-4f02-b264-148a8c80030d?action=share&source=collection_link&creator=44107237"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "John Jim",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "johnjiam@mailiantor.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://auth.test/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"auth",
+						"test"
+					],
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
